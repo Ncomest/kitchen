@@ -24,6 +24,8 @@ body {
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  border-bottom: 1px solid #610303;
+  z-index: 20;
 }
 
 /*навигационная панель*/
@@ -290,6 +292,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 /*расположение блоков в шапке*/
@@ -315,4 +318,101 @@ body {
   width: 1100px;
   font-weight: 300;
   text-align: center;
+}
+
+/*контейрен с блоками фото*/
+.wrap-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.wrap-img div {
+  position: relative;
+}
+/*блоки фото*/
+.wrap-img div img {
+  width: 100%;
+  position: relative;
+}
+
+/*кнопка для картинки*/
+.wrap-img div button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: button-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #8c0404;
+  border: 1px solid #610303;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+
+/*наведение на кнопку*/
+.wrap-img div:hover button {
+  display: block;
+}
+
+/*анимация кнопки*/
+@keyframes button-animation {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*раздел5 content-5*/
+/*расположение контейнеров*/
+.content-5 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+/*текст*/
+.content-5 div p {
+  color: #707070;
+  font-size: 26px;
+  line-height: 1.45;
+  width: 1100px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*кнопка*/
+.content-5 div button {
+  margin: 30px;
+  padding: 20px 80px;
+  background-color: #c31e19;
+  color: #fff;
+  border: #610303;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 9px #999;
+}
+
+/*анимации кнопки*/
+.content-5 div button:hover {
+  background-color: #8c0404;
+}
+
+.content-5 div button:active {
+  background-color: #8c0404;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
