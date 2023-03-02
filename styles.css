@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+/*плавный переход*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*фикс навиг панель не перекрывает якоря*/
+[id] {
+  scroll-margin-top: 70px;
+}
+
 body {
   margin: 0;
   position: relative;
@@ -33,8 +43,6 @@ body {
   display: flex;
 }
 
-/*лого*/
-
 /*выбор стиля*/
 .navbar ul li {
   margin: 20px;
@@ -48,7 +56,7 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: #fffafa;
+  color: #8c0404;
 }
 
 /*номер / заказ*/
@@ -415,4 +423,39 @@ body {
   background-color: #8c0404;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+/*раздел6 content-6*/
+.content-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #95cedb32;
+  padding-bottom: 50px;
+}
+
+.block div h2 {
+  color: #c31e19;
+  font-size: 56px;
+  margin: 0;
+  font-weight: 800;
+}
+
+/*раздел7 content-7*/
+
+.content-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-7 h4 {
+  color: #d50000;
+  font-size: 26px;
+}
+
+.content-7 div {
+  margin: 20px;
+  margin-left: 0;
 }
