@@ -340,14 +340,12 @@ body {
 
 .wrap-img div {
   position: relative;
-  
 }
 /*блоки фото*/
 .wrap-img div img {
   height: 100%;
   width: 100%;
   position: relative;
-  
 }
 
 /*кнопка для картинки*/
@@ -463,7 +461,6 @@ body {
   margin-left: 0;
 }
 
-
 /*функционал нажатия на картинку*/
 
 /* Стили для модального окна */
@@ -476,9 +473,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto; /* добавить прокрутку, если контент слишком длинный */
-  background-color: rgba(0,0,0,0.4); /* затемнить фон */
+  background-color: rgba(0, 0, 0, 0.4); /* затемнить фон */
 }
-
 
 /* CSS для модального окна */
 .modal {
@@ -518,4 +514,3 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-

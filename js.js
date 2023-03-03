@@ -8,16 +8,11 @@ var span = document.getElementsByClassName("close")[0];
 var images = document.querySelectorAll(".wrap-img img");
 var btns = document.querySelectorAll(".wrap-img button");
 
-
-
-
-
 // Функция, которая открывает модальное окно с соответствующей картинкой
 function openModal(index) {
   modal.style.display = "block";
   modalImg.src = images[index].src;
   document.body.style.overflow = "hidden";
-  
 }
 
 // Добавляем обработчик клика для каждой кнопки
@@ -25,7 +20,6 @@ btns.forEach(function (btn, index) {
   btn.addEventListener("click", function () {
     openModal(index);
   });
-
 });
 
 // Добавляем обработчик клика для элемента <span>, который закрывает модальное окно
@@ -38,4 +32,3 @@ modal.addEventListener("click", function () {
   modal.style.display = "none";
   document.body.style.overflow = "auto";
 });
-
