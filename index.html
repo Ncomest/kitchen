@@ -40,18 +40,20 @@
               <p>Хотите увидеть свою будущую кухню?</p>
             </div>
             <div class="content-1-right">
-              <div>
-                <h3>Заполните заявку</h3>
-                <p>на бесплатный дизайн-проект вашей будущей кухни!</p>
-                <input type="text" placeholder="Имя" />
-                <input type="text" placeholder="Телефон" />
-                <input type="text" placeholder="Город" />
-                <label>
-                  <input type="checkbox" name="agree" value="yes" />Я согласен с
-                  Политикой конфиденциальности
-                </label>
-                <button type="submit">Отправить заявку</button>
-              </div>
+              <form action="send-form.php" method="post">
+                <div>
+                  <h3>Заполните заявку</h3>
+                  <p>на бесплатный дизайн-проект вашей будущей кухни!</p>
+                  <input type="text" name="userName" placeholder="Имя" required/>
+                  <input type="text" name="userPhone" placeholder="Телефон" required/>
+                  <input type="email" name="email" placeholder="E-mail" />
+                  <label>
+                    <input type="checkbox" name="agree" value="yes" required />Я согласен с Политикой конфиденциальности
+                  </label>
+                  <button type="submit" name="submit">Отправить заявку</button>
+                </div>
+              </form>
+              
             </div>
           </div>
         </div>

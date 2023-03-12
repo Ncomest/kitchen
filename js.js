@@ -1,3 +1,5 @@
+"use strict"
+
 // Получаем модальное окно
 var modal = document.getElementById("myModal");
 
@@ -32,3 +34,4 @@ modal.addEventListener("click", function () {
   modal.style.display = "none";
   document.body.style.overflow = "auto";
 });
+
